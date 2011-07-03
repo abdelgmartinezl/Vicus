@@ -1,26 +1,23 @@
 package com.vicus.ventanas;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import javax.swing.border.LineBorder;
-import java.awt.Color;
-import javax.swing.SwingConstants;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.border.BevelBorder;
-import java.awt.Font;
-import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
 import javax.swing.JTable;
+import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.LineBorder;
 
 import com.toedter.calendar.JCalendar;
-import javax.swing.JTextField;
-import javax.swing.JList;
-import javax.swing.JTextArea;
-import javax.swing.UIManager;
 
 public class VicusPrincipal {
 
@@ -104,7 +101,7 @@ public class VicusPrincipal {
 		btnSalir.setBackground(new Color(128, 0, 0));
 		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int r = JOptionPane.showConfirmDialog(null, "Â¿Seguro que desea salir de Vicus?", "Vicus - SALIR", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+				int r = JOptionPane.showConfirmDialog(null, "ÀSeguro que desea salir de Vicus?", "Vicus - SALIR", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 				if (r == 0) System.exit(0);
 			}
 		});
